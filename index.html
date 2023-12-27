@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="#" id="calc-form">
+          <div class="container-form">
+            <div class="box-inputs">
+              <label for="day">day</label>
+              <input
+                type="number"
+                name="day"
+                id="day"
+                autocomplete="off"
+                placeholder="DD"
+              />
+              <div class="error error-day"></div>
+            </div>
+            <div class="box-inputs">
+              <label for="month">month</label>
+              <input
+                type="number"
+                name="month"
+                id="month"
+                autocomplete="off"
+                placeholder="MM"
+              />
+              <div class="error error-month"></div>
+            </div>
+            <div class="box-inputs">
+              <label for="year">year</label>
+              <input
+                type="number"
+                name="year"
+                id="year"
+                autocomplete="off"
+                placeholder="YY"
+              />
+              <div class="error error-year"></div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <hr />
+            <button type="submit" id="btn">
+              <img src="./assets/images/icon-arrow.svg" alt="img" />
+            </button>
+          </div>
+        </form>
+        <section class="main-content">
+          <h1><span id="yy">--</span>years</h1>
+          <h2><span id="mm">--</span>months</h2>
+          <h3><span id="dd">--</span>days</h3>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
